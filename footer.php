@@ -7,13 +7,12 @@
             <div class="col-12">
                 <div class="footer__wraper">
                     <?php get_template_part('templates-parts/footer/footer', 'contact'); ?>
-                    <?php get_template_part('templates-parts/footer/footer', 'info'); ?>
                     <?php get_template_part('templates-parts/footer/footer', 'menu'); ?>
                 </div>
             </div>
         </div>
     </div>
-
+    <?php get_template_part('templates-parts/footer/footer', 'info'); ?>
 </footer>
 <span id="go-to-top"></span>
 <?php wp_footer(); ?>

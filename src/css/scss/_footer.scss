@@ -1,0 +1,44 @@
+// footer info
+.footer__w__info {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: $light;
+  v * {
+    font-size: 14px;
+    color: $light-black;
+  }
+}
+.footer__w__info__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  @media #{$sm} {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.footer__w__info__brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  @media #{$sm} {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.footer__w__info__social {
+  @media #{$sm} {
+    width: 100%;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 15px;
+    @media #{$sm} {
+      justify-content: center;
+    }
+  }
+}
