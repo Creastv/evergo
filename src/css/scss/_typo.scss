@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "uni_sansheavy_caps";
+  src: url("../fonts/uni_sans_heavy-webfont.eot");
+  src: url("../fonts/uni_sans_heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/uni_sans_heavy-webfont.woff2") format("woff2"),
+    url("../fonts/uni_sans_heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni_sansthin_caps";
+  src: url("../fonts/uni_sans_thin-webfont.eot");
+  src: url("../fonts/uni_sans_thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/uni_sans_thin-webfont.woff2") format("woff2"),
+    url("../fonts/uni_sans_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "URW DIN";
+  src: url("../fonts/URWDIN-Bold.eot");
+  src: local("URW DIN Bold"), local("../fonts/URWDIN-Bold"), url("../fonts/URWDIN-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/URWDIN-Bold.woff2") format("woff2"),
+    url("../fonts/URWDIN-Bold.woff") format("woff"), url("../fonts/URWDIN-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "URW DIN";
+  src: url("../fonts/URWDIN-Regular.eot");
+  src: local("URW DIN Regular"), local("URWDIN-Regular"), url("../fonts/URWDIN-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/URWDIN-Regular.woff2") format("woff2"),
+    url("../fonts/URWDIN-Regular.woff") format("woff"), url("../fonts/URWDIN-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "uni_sansheavy_caps";
+  font-weight: 400;
+  color: $black;
+}
+p {
+  font-family: "URW DIN";
+  font-weight: normal;
+  font-size: 18px;
+  color: $light-black;
+  @media #{$sm} {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: $main;
+  transition: all 0.3s linear;
+}
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: $main; /* Safari */
+  text-decoration-color: $main;
+}
+.go-main {
+  color: $main !important;
+}

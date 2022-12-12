@@ -1,0 +1,26 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px;
+  max-width: 265px;
+  border:1px solid #ffff;
+  border-radius: 100px;
+  text-decoration: none;
+  color:#fff;
+  font-size: 14px;
+  // margin: 0 auto;
+  transition: all 0.3s linear;
+  @media #{$sm} {
+    font-size: 18px;
+    padding: 20px;
+  }
+  &:hover {
+    border:1px solid $main;
+    background-color: $main;
+  }
+}
+
+.btn--small{
+  padding: 10px 35px;
+}
