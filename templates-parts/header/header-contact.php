@@ -1,29 +1,13 @@
 <?php
-$email = get_field('email', 'options');
-$tel = get_field('phone_no', 'options');
-$telLink = get_field('phone_no_link', 'options');
 ?>
-<?php if(!empty($email) && !empty($tel)) { ?>
-<div class="inf-contact">
+
+<div class="navbar__contact">
     <ul>
-        <?php if(!empty($email)) { ?>
         <li>
-            <a href="mailto: <?php echo $email; ?>">
-                <span>
-                    <?php echo $email; ?>
-                </span>
-            </a>
+            <a href="mailto:contact@evergopartners.com">contact@evergopartners.com</a>
         </li>
-        <?php } ?>
-        <?php if(!empty($tel) && !empty($telLink)) { ?>
         <li>
-            <a href="tel:<?php echo $telLink; ?>">
-                <span>
-                    <?php echo $tel; ?>
-                </span>
-            </a>
+            <a href="#" class="btn">Contact Us</a>
         </li>
-        <?php } ?>
     </ul>
 </div>
-<?php } ?>

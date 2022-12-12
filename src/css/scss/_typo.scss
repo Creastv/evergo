@@ -32,6 +32,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "URW DIN";
+  src: url("../fonts/URWDIN-Medium.eot");
+  src: local("../fonts/URW DIN Medium"), local("URWDIN-Medium"), url("../fonts/URWDIN-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/URWDIN-Medium.woff2") format("woff2"),
+    url("../fonts/URWDIN-Medium.woff") format("woff"), url("../fonts/URWDIN-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -54,7 +63,7 @@ p {
 
 a {
   color: $main;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }
 .text-center {
   text-align: center;

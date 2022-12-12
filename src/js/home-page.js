@@ -12,7 +12,7 @@
     },
     navigation: {
       nextEl: ".sw-next",
-      prevEl: ".sw-prev",
+      prevEl: ".sw-prev"
     },
     breakpoints: {
       778: {
@@ -31,41 +31,38 @@
     }
   });
   var swiper = new Swiper(".mySwiper", {
-        effect: "creative",
-        // loop: true,
-        autoplay: {
-          delay: 3900,
-          disableOnInteraction: false
-        },
-         pagination: {
-          el: ".s-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
-          },
-        },
-        navigation: {
-          nextEl: ".s-next",
-          prevEl: ".s-prev",
-        },
-        creativeEffect: {
-          prev: {
-            opacity: 0,
-            translate: [0, 0, -500]
-          },
-          next: {
-            opacity: 0,
-            translate: [0, 0, 0]
-          }
-        },
+    effect: "creative",
+    // loop: true,
+    autoplay: {
+      delay: 3900,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".s-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      }
+    },
+    navigation: {
+      nextEl: ".s-next",
+      prevEl: ".s-prev"
+    },
+    creativeEffect: {
+      prev: {
+        opacity: 0,
+        translate: [0, 0, -500]
+      },
+      next: {
+        opacity: 0,
+        translate: [0, 0, 0]
+      }
+    }
   });
   if (window.innerWidth > 960) {
-    window.addEventListener('scroll', () => {  
+    window.addEventListener("scroll", () => {
       let scrollTop = document.documentElement.scrollTop;
-      document.querySelector('.slider__bg').style.width = 100 + scrollTop / 100 + '%';
+      document.querySelector(".slider__bg").style.width = 100 + scrollTop / 100 + "%";
     });
   }
-
-
-
 })();

@@ -1,6 +1,6 @@
-<div class="toggler-nav js-toggler-nav">
+<div class="navbar__toggler js-navbar__toggler">
     <span>menu</span>
-    <div class="toggler-nav__btn">
+    <div class="navbar__toggler__btn">
         <span></span>
         <span></span>
         <span></span>

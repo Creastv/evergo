@@ -13,12 +13,12 @@ body {
   padding: 0;
   background-color: #fff;
   overflow-x: hidden;
-  padding-top: 188px;
+  // padding-top: 188px;
 }
 
 .container {
   max-width: 1440px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   @media #{$md} {
     width: 100%;
