@@ -172,6 +172,11 @@ body {
   margin-bottom: 20px;
 }
 
+.f-main .spacer {
+  height: 44px;
+  display: block;
+}
+
 .f-main ul {
   list-style: none;
   padding: 0;
@@ -389,10 +394,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-#header {
-  margin-bottom: 100px;
 }
 
 #header .header-bg {
@@ -732,6 +733,106 @@ body {
   width: 100%;
   -webkit-transform-origin: 30% 0;
           transform-origin: 30% 0;
+}
+
+.t-page {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .t-page {
+    padding: 50px 0;
+  }
+}
+
+.t-page .t-page__content {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .t-page .t-page__content {
+    width: 90%;
+  }
+}
+
+.t-page .t-page__content .entry-title {
+  margin: 0;
+  padding: 25px 0;
+  font-size: 38px;
+}
+
+.t-page .t-page__content p {
+  font-size: 21px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .t-page .t-page__content p {
+    font-size: 16px;
+  }
+}
+
+.t-page .t-page__sroll {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 50px;
+  position: relative;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+@media only screen and (max-width: 768px) {
+  .t-page .t-page__sroll {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .t-page .t-page__sroll {
+    padding: 0 0 0 10px;
+    -webkit-transform: translate(-10px, 15%);
+            transform: translate(-10px, 15%);
+  }
+}
+
+.t-page .t-page__sroll span {
+  margin-right: 20px;
+  font-weight: bold;
+  color: #37444a;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .t-page .t-page__sroll span {
+    display: none;
+  }
+}
+
+.t-page .t-page__sroll:before {
+  content: "";
+  position: absolute;
+  right: 66px;
+  top: -30%;
+  width: 1px;
+  height: 100%;
+  background-color: #c6ced3;
+}
+
+@media only screen and (max-width: 768px) {
+  .t-page .t-page__sroll:before {
+    right: 14px;
+  }
 }
 
 .error404 h1 {
