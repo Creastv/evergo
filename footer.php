@@ -1,4 +1,6 @@
 </div>
+</div>
+<?php get_template_part('templates-parts/parts/footer', 'form'); ?>
 </main>
 <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
     <?php get_template_part('templates-parts/footer/footer', 'social-media'); ?>

@@ -53,14 +53,21 @@ function prefix_remove_unnecessary_tags() {
 add_action('init', 'prefix_remove_unnecessary_tags');
 
 // disable gut for pages
-function icx_disable_gutenberg( $can_edit, $post ) {
+add_filter( 'use_block_editor_for_post', 'my_disable_gutenberg', 10, 2 );
+
+function my_disable_gutenberg( $can_edit, $post ) {
+  if( $post->post_type == 'post' ) {
+    return true;
+  }
   return false;
 }
 
 // remove in wordpress jquery-migrate.min.js?ver=3.3.2:2 JQMIGRATE: Migrate is installed, version 3.3.2
-add_filter( 'use_block_editor_for_post', 'icx_disable_gutenberg', 10, 2 );
 add_action('wp_default_scripts', function ($scripts) {
     if (!empty($scripts->registered['jquery'])) {
         $scripts->registered['jquery']->deps = array_diff($scripts->registered['jquery']->deps, ['jquery-migrate']);
     }
 });
+
+
+add_filter('wpcf7_autop_or_not', '__return_false');
