@@ -1,8 +1,8 @@
-<div class="footer__w__info">
+<div class="f__info">
     <div class="container">
         <div class="row">
-            <div class="footer__w__info__wraper">
-                <div class="footer__w__info__brand">
+            <div class="f__info__wraper">
+                <div class="f__info__brand">
                     <svg xmlns="http://www.w3.org/2000/svg" width="159" height="20.001" viewBox="0 0 159 20.001">
                         <g id="logo_" data-name="logo\" transform="translate(-2 -4)">
                             <g id="Group_2" data-name="Group 2">
@@ -13,7 +13,7 @@
                     </svg>
                     <span>Copyright © 2022 by roial.pl.All Rights Reserved</span>
                 </div>
-                <div class="footer__w__info__social">
+                <div class="f__info__social">
                     <ul>
                         <li>
                             <span>We are in social media:</span>

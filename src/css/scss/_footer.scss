@@ -1,24 +1,128 @@
+// footer main
+.f-main {
+  padding: 20px 0;
+  .h3 {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    @media #{$sm} {
+      margin-bottom: 20px;
+    }
+    li {
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 3px 8px 3px 0;
+        color: $light-black;
+        font-size: 16px;
+        &:hover {
+          color: $main;
+        }
+      }
+    }
+  }
+}
+.f-main__wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.f-main__col {
+  padding: 0 50px 0 0;
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    @media #{$md} {
+      width: 33.333%;
+    }
+    @media #{$sm} {
+      width: inherit;
+    }
+  }
+  &:last-child {
+    padding: 0;
+    @media #{$md} {
+      width: 100%;
+    }
+  }
+}
+.f-main__col--auto {
+  flex: auto;
+}
+.f-main__contact {
+  margin-top: 50px;
+  text-align: right;
+  @media #{$md} {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  p {
+    margin: 0 0 3px 0;
+    padding: 0;
+    font-size: 21px;
+    color: $black;
+  }
+  a {
+    font-size: 21px;
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: $main;
+    }
+  }
+}
+// footer contact
+.f-contact {
+  padding: 50px 0;
+  border-top: 1px solid $gray;
+  @media #{$sm} {
+    padding: 20px 0 40px;
+  }
+  .h2 {
+    @media #{$sm} {
+      margin-bottom: 20px;
+    }
+  }
+}
+.f-contact__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  @media #{$sm} {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.f-contact__col {
+}
+.f-contact__col--auto {
+  flex: auto;
+}
 // footer info
-.footer__w__info {
+.f__info {
   width: 100%;
   padding: 30px 0px;
   background-color: $light;
-  v * {
+  * {
     font-size: 14px;
     color: $light-black;
   }
 }
-.footer__w__info__wraper {
+.f__info__wraper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  @media #{$sm} {
+  @media #{$md} {
     justify-content: center;
     gap: 20px;
   }
 }
-.footer__w__info__brand {
+.f__info__brand {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -28,13 +132,14 @@
     width: 100%;
   }
 }
-.footer__w__info__social {
+.f__info__social {
   @media #{$sm} {
     width: 100%;
   }
   ul {
     list-style: none;
     display: flex;
+    align-items: flex-end;
     margin: 0;
     gap: 15px;
     @media #{$sm} {

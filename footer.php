@@ -7,7 +7,7 @@
             <div class="col-12">
                 <div class="footer__wraper">
                     <?php get_template_part('templates-parts/footer/footer', 'contact'); ?>
-                    <?php get_template_part('templates-parts/footer/footer', 'menu'); ?>
+                    <?php get_template_part('templates-parts/footer/footer', 'main'); ?>
                 </div>
             </div>
         </div>
