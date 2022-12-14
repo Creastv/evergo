@@ -1,12 +1,8 @@
 #header {
-  .header-bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 95%;
-  }
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0px;
 
   .navbar {
     display: flex;
@@ -42,6 +38,30 @@
     }
   }
 }
+
+.js-header.active {
+  background-color: #fff !important;
+  background-image: url("../img/header-bg.png") !important;
+  background-position: center top;
+  // background-size: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @media #{$lg} {
+    background-size: 95%;
+  }
+}
+
+.header-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1400px;
+}
+
 // Logo
 .navbar__brand {
   padding-right: 40px;

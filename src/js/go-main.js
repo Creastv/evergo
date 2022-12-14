@@ -52,32 +52,20 @@
   });
   // sticy nabvbar
   const navbar = document.querySelector("#header");
-
-  var lastScrollTop = 0;
   document.addEventListener("scroll", () => {
     var st = window.pageYOffset || document.documentElement.scrollTop;
-    if (window.pageYOffset >= 50) {
+    if (window.pageYOffset) {
       navbar.classList.add("active");
     } else {
       navbar.classList.remove("active");
     }
-
-    if (window.pageYOffset >= 400) {
-      if (st > lastScrollTop) {
-        navbar.classList.add("up");
-      } else {
-        navbar.classList.remove("up");
-      }
-    }
-
-    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   });
 
-  // // set body padding top by geting header height
-  // function heightHeader() {
-  //   const heightHeader = document.querySelector("#header");
-  //   document.querySelector("body").style.paddingTop = heightHeader.clientHeight + "px";
-  // }
-  // window.addEventListener("resize", heightHeader);
-  // heightHeader();
+  // set body padding top by geting header height
+  function heightHeader() {
+    const heightHeader = document.querySelector("#header");
+    document.querySelector("body").style.paddingTop = heightHeader.clientHeight + "px";
+  }
+  window.addEventListener("resize", heightHeader);
+  heightHeader();
 })();

@@ -25,8 +25,9 @@
                 </div>
             </div>
         </div>
-        <img class="header-bg" src="<?php echo get_template_directory_uri() ?>/src/img/header-bg.png" alt="Evergo - Better business throught IT.">
+
     </header>
+
     <main id="main">
         <div class="container">
             <div class="row">

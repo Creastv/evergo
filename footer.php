@@ -17,6 +17,7 @@
     <?php get_template_part('templates-parts/footer/footer', 'info'); ?>
 </footer>
 <span id="go-to-top"></span>
+<img class="header-bg" src="<?php echo get_template_directory_uri() ?>/src/img/header-bg.png" alt="Evergo - Better business throught IT.">
 <?php wp_footer(); ?>
 </body>
 
