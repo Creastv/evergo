@@ -1,6 +1,12 @@
+<?php 
+$form = get_field('display_form');
+$article = get_field('display_articles');
+?>
 </div>
 </div>
+<?php if($form) { ?>
 <?php get_template_part('templates-parts/parts/footer', 'form'); ?>
+<?php } ?>
 </main>
 <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
     <?php get_template_part('templates-parts/footer/footer', 'social-media'); ?>
