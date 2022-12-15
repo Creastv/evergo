@@ -1,0 +1,19 @@
+@import "../../variable";
+
+#logos {
+  padding: 50px 0px;
+  .t-section__wraper {
+    margin-bottom: 50px;
+  }
+  .logos {
+    .swiper-slide {
+      .logo {
+        padding: 10px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

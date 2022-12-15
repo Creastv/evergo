@@ -1031,10 +1031,13 @@ body {
   border-radius: 100px;
   border: 1px solid #c6ced3;
   text-decoration: none;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
 }
 
 .btn:hover {
   border-color: #e70680;
+  color: #e70680;
 }
 
 .btn-revers {

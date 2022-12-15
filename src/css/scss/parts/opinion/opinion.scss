@@ -1,0 +1,60 @@
+@import "../../variable";
+
+#opinion {
+  padding: 50px 0;
+  @media #{$sm} {
+    padding: 30px 0;
+  }
+}
+
+.opinion__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .opinion__wraper__col {
+    width: 50%;
+    @media #{$sm} {
+      width: 100%;
+    }
+    &:nth-child(1) {
+      padding: 40px;
+      background-color: $light;
+    }
+    &:nth-child(2) {
+      padding: 40px;
+    }
+  }
+}
+
+.opinion__wraper__content {
+  .top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    .img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      border: 1px solid $light-black;
+      overflow: hidden;
+      text-align: center;
+    }
+    p {
+      color: $black;
+      font-size: 24px;
+      margin: 0;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  .bottom {
+    p {
+      font-size: 20px;
+      line-height: 31px;
+    }
+  }
+}

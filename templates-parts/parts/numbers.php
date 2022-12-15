@@ -2,18 +2,7 @@
 $image    = get_field('image_no');
 $header   = get_field('header_no');
 $numbers  = get_field('numbers'); 
-
 ?>
-<?php 
-// echo $header['subtitle'];
-// echo $header['title'];
-// echo $header['description'];
-
-// echo $numbers['number'];
-// echo $numbers['description'];
-
-?>
-
 <section id="numbers">
     <div class="numbers__wraper">
         <div class="numbers__col">

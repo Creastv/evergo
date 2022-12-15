@@ -1,0 +1,16 @@
+@import "../../variable";
+
+#slider-hero {
+  position: relative;
+  max-height: 70vh;
+}
+
+.slider-home {
+  .h1 {
+    font-size: 64px;
+  }
+  .slide {
+    padding: 150px 0;
+    padding-left: 15%;
+  }
+}

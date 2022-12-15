@@ -4,8 +4,10 @@
   border-radius: 100px;
   border: 1px solid $gray;
   text-decoration: none;
+  transition: 0.1s linear;
   &:hover {
     border-color: $main;
+    color: $main;
   }
 }
 

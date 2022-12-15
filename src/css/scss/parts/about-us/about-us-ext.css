@@ -1,0 +1,79 @@
+#about-us-ex {
+  padding: 50px 0px 0px;
+}
+
+.about-us__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us__wraper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.about-us__wraper .about-us__col:nth-child(1) {
+  width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us__wraper .about-us__col:nth-child(1) {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.about-us__wraper .about-us__col:nth-child(2) {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us__wraper .about-us__col:nth-child(2) {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 30px;
+  }
+}
+
+.about-us__baner svg {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.about-us__baner .btn {
+  display: inline-block;
+}
+
+.about-us__baner .about-us__baner__content {
+  margin-bottom: 30px;
+}
+
+.about-us__baner .about-us__baner__content span {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.about-us__baner .about-us__baner__content p {
+  font-size: 30px;
+  line-height: 31px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #37444a;
+}
+
+.about-us__baner .about-us__baner__content p big {
+  font-size: 44px;
+}
+/*# sourceMappingURL=about-us-ext.css.map */

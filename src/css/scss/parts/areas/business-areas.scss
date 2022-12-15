@@ -2,8 +2,10 @@
 #areas {
   position: relative;
   padding: 50px 0;
+  margin-top: 50px;
   @media #{$md} {
     padding: 30px 0;
+    margin-top: 30px;
   }
 }
 
@@ -74,6 +76,7 @@
   }
   p {
     margin-bottom: 50px;
+    text-align: justify;
   }
   .btn {
     margin-bottom: 20px;

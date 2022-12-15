@@ -12,12 +12,17 @@ function enqueue_styles() {
        wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.css' ); 
        wp_enqueue_style( 'go-numbers', get_template_directory_uri().'/src/css/scss/parts/numbers/numbers.min.css' ); 
        wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' ); 
+       wp_enqueue_style( 'go-about-us', get_template_directory_uri().'/src/css/scss/parts/about-us/about-us.min.css' ); 
+       wp_enqueue_style( 'go-logos', get_template_directory_uri().'/src/css/scss/parts/logos/logos.min.css' ); 
+       wp_enqueue_style( 'go-opinion', get_template_directory_uri().'/src/css/scss/parts/opinion/opinion.min.css' ); 
+       wp_enqueue_style( 'go-slider', get_template_directory_uri().'/src/css/scss/parts/slider/slider.min.css' ); 
     }
     if(is_page(array(17))){ //about-us
        wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
        wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.min.css' ); 
        wp_enqueue_style( 'go-numbers', get_template_directory_uri().'/src/css/scss/parts/numbers/numbers.min.css' ); 
-       wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' ); 
+       wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' );
+       wp_enqueue_style( 'go-about-us-ext', get_template_directory_uri().'/src/css/scss/parts/about-us/about-us-ext.min.css' ); 
     }
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
