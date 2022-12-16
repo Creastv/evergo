@@ -7,6 +7,9 @@ $article = get_field('display_articles');
 <?php if($form) { ?>
 <?php get_template_part('templates-parts/parts/footer', 'form'); ?>
 <?php } ?>
+<?php if(is_singular('post') || $article) { ?>
+<?php get_template_part( 'templates-parts/parts/articles' ); ?>
+<?php } ?>
 </main>
 <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
     <?php get_template_part('templates-parts/footer/footer', 'social-media'); ?>

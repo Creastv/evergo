@@ -1,0 +1,34 @@
+@import "../../variable";
+#case-study {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.case-study__numbers {
+  display: flex;
+  justify-content: center;
+  @media #{$md} {
+    flex-wrap: wrap;
+  }
+  .case-study__number {
+    padding: 10px;
+    width: 20%;
+    @media #{$md} {
+      width: 33.333%;
+    }
+    @media #{$sm} {
+      width: 50%;
+    }
+
+    span {
+      font-size: 41px;
+      line-height: 46px;
+      color: #37444a;
+      margin: 0;
+    }
+    p {
+      line-height: initial;
+    }
+  }
+}

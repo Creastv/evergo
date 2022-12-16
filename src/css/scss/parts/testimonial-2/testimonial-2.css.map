@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAC;EACb,OAAO,EAAE,MAAM;CAChB",
+    "sources": [
+        "testimonial-2.scss",
+        "../../_variable.scss"
+    ],
+    "names": [],
+    "file": "testimonial-2.css"
+}

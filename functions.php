@@ -3,6 +3,7 @@ add_theme_support('post-thumbnails');
 add_image_size( 'person', 100, 100, array( 'center', 'center' ) );
 add_image_size( 'icon', 45, 45, array( 'center', 'center' ) );
 add_image_size( 'logo', 200, 200 );
+add_image_size( 'post', 700, 390, array( 'center', 'center' ) );
 
 if ( ! function_exists( 'go_register_nav_menu' ) ) {
     function go_register_nav_menu(){
@@ -57,4 +58,21 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 		'redirect'   => false
 	) );
 
+}
+
+// Paginacja
+function pagination_bars() {
+    global $wp_query;
+ 
+    $total_pages = $wp_query->max_num_pages;
+	$big = 999999999; // need an unlikely integer
+    if ($total_pages > 1){
+        $current_page = max(1, get_query_var('paged'));
+		echo paginate_links(array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            'format' => '?paged=%#%',
+            'current' => $current_page,
+            'total' => $total_pages,
+        ));
+    }
 }

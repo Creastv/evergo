@@ -56,7 +56,7 @@ add_action('init', 'prefix_remove_unnecessary_tags');
 add_filter( 'use_block_editor_for_post', 'my_disable_gutenberg', 10, 2 );
 
 function my_disable_gutenberg( $can_edit, $post ) {
-  if( $post->post_type == 'post' ) {
+  if( $post->post_type == 'post' || $post->post_type == 'case-study' ) {
     return true;
   }
   return false;

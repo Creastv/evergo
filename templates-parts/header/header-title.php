@@ -1,9 +1,17 @@
 <?php
+if(is_home()) {
+$slug = get_page_by_path( 'blog' ); 
+$header         = get_field('header', $slug->ID);
+$displayHeader  = get_field('display_header', $slug->ID);
+} else {
 $header         = get_field('header');
 $displayHeader  = get_field('display_header');
+}
+
+
 ?>
 <?php if($displayHeader) { ?>
-<header class="t-page">
+<header class="t-page <?php echo the_ID()?>">
     <div class="t-page__content">
         <?php if($header['subtitle']) { ?>
         <span class="c-main"><?php echo $header['subtitle']; ?></span>
@@ -43,7 +51,9 @@ $displayHeader  = get_field('display_header');
         </h1>
         <?php if($header['excerpt']) { ?>
         <p><?php echo $header['excerpt']; ?></p>
-        <?php } ?>
+        <?php }
+		echo category_description();
+		?>
     </div>
     <div class="t-page__sroll">
         <span>Learn more</span>
