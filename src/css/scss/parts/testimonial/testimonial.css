@@ -116,10 +116,12 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 .testimonial__item__top .name span {
   font-size: 14px;
+  line-height: 17px;
 }
 
 .testimonial__item__bottom p {

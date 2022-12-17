@@ -64,10 +64,12 @@
   color: #37444a;
   font-size: 24px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .opinion__wraper__content .top span {
   font-size: 14px;
+  line-height: 17px;
 }
 
 .opinion__wraper__content .bottom p {

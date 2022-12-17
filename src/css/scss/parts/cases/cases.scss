@@ -1,27 +1,37 @@
+@import "../../variable";
 #cases {
   .case__item {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    // @media #{$sm} {
-    //   flex-wrap: wrap;
-    // }
+    @media #{$sm} {
+      margin-bottom: 30px;
+    }
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
 
     &:nth-child(even) {
       .left {
         order: 2;
+        @media #{$sm} {
+          order: 1;
+        }
       }
       .right {
         order: 1;
+        @media #{$sm} {
+          order: 2;
+        }
       }
     }
     .left {
       width: 50%;
       position: relative;
-      // @media #{$sm} {
-      //   width: 100%;
-      // }
+      @media #{$sm} {
+        width: 100%;
+      }
       &:before {
         content: "";
         position: absolute;
@@ -41,9 +51,10 @@
     .right {
       width: 50%;
       padding: 40px;
-      // @media #{$sm} {
-      //   width: 100%;
-      // }
+      @media #{$sm} {
+        width: 100%;
+        padding: 40px 20px;
+      }
       p {
         margin-bottom: 30px;
       }

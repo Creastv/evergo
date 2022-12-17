@@ -183,6 +183,10 @@ body {
   }
 }
 
+#error h2 {
+  margin-bottom: 30px;
+}
+
 .f-main {
   padding: 20px 0;
 }
@@ -1408,6 +1412,10 @@ body {
 .btn:hover {
   border-color: #e70680;
   color: #e70680;
+}
+
+.btn-main {
+  display: inline-block;
 }
 
 .btn-revers {

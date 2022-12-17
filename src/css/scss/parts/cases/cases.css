@@ -10,10 +10,31 @@
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  #cases .case__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #cases .case__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 #cases .case__item:nth-child(even) .left {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  #cases .case__item:nth-child(even) .left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 #cases .case__item:nth-child(even) .right {
@@ -22,9 +43,23 @@
           order: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  #cases .case__item:nth-child(even) .right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 #cases .case__item .left {
   width: 50%;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  #cases .case__item .left {
+    width: 100%;
+  }
 }
 
 #cases .case__item .left:before {
@@ -47,6 +82,13 @@
 #cases .case__item .right {
   width: 50%;
   padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  #cases .case__item .right {
+    width: 100%;
+    padding: 40px 20px;
+  }
 }
 
 #cases .case__item .right p {

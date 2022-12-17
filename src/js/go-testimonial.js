@@ -2,10 +2,10 @@ var swiper = new Swiper(".testimonial", {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
-  //   autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false
-  //   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
   navigation: {
     nextEl: ".sw-button-next",
     prevEl: ".sw-button-prev"

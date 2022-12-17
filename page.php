@@ -23,6 +23,10 @@ while ( have_posts() ) : the_post(); ?>
 		get_template_part( 'templates-parts/parts/case-study' );
 		get_template_part( 'templates-parts/parts/banner' );
 		get_template_part( 'templates-parts/parts/testimonial-2' );
+	 } else if (is_page(19)){ //service
+		get_template_part( 'templates-parts/parts/business-areas' );
+		get_template_part( 'templates-parts/parts/testimonial' );
+
 	 }
 	 ?>
     <div class="entry-content">

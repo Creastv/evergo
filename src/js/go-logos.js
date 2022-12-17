@@ -1,9 +1,8 @@
 var swiper = new Swiper(".logos", {
   slidesPerView: 3,
-  //   spaceBetween: 10,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 4500,
     disableOnInteraction: false
   },
   breakpoints: {

@@ -25,9 +25,21 @@ function enqueue_styles() {
        wp_enqueue_style( 'go-about-us-ext', get_template_directory_uri().'/src/css/scss/parts/about-us/about-us-ext.min.css' ); 
     }
     if(is_page(array(21))){ //case studys
+        wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
         wp_enqueue_style( 'go-cases', get_template_directory_uri().'/src/css/scss/parts/cases/cases.min.css' ); 
         wp_enqueue_style( 'go-banner', get_template_directory_uri().'/src/css/scss/parts/banner/banner.min.css' ); 
         wp_enqueue_style( 'go-testimonial-2', get_template_directory_uri().'/src/css/scss/parts/testimonial-2/testimonial-2.min.css' ); 
+    }
+     if ( is_page_template( 'page-service.php' ) ) {
+        wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
+        wp_enqueue_style( 'go-cases', get_template_directory_uri().'/src/css/scss/parts/cases/cases.min.css' ); 
+        wp_enqueue_style( 'go-banner', get_template_directory_uri().'/src/css/scss/parts/banner/banner.min.css' ); 
+        wp_enqueue_style( 'go-testimonial-2', get_template_directory_uri().'/src/css/scss/parts/testimonial-2/testimonial-2.min.css' ); 
+     }
+    if (is_page(19)){ //service
+        wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
+        wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' );
+        wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.min.css' );  
     }
     if(is_singular('case-study')){ //Case study
         wp_enqueue_style( 'go-actions-effects', get_template_directory_uri().'/src/css/scss/parts/actions-effects/actions-effects.min.css' ); 
