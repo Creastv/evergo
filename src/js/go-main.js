@@ -68,4 +68,13 @@
   }
   window.addEventListener("resize", heightHeader);
   heightHeader();
+
+  // scroll to section
+  const svg = document.querySelector(".js-scroll");
+  function scrollToSection() {
+    // window.scrollTo(0, 500);
+    document.querySelector(".scroll-anchor").scrollIntoView();
+    // document.querySelector("#cases").scrollIntoView() - 100;
+  }
+  svg.addEventListener("click", scrollToSection);
 })();

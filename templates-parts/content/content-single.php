@@ -8,7 +8,7 @@
                 </h1>
                 <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
             </div>
-            <div class="t-page-sroll">
+            <div class="t-page-sroll js-scroll">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
                     <g id="Group_1" data-name="Group 1" transform="translate(-1996 -461)">
                         <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1996 461)" fill="none" stroke="#c6ced3" stroke-width="1">
@@ -32,6 +32,7 @@
                 <?php the_post_thumbnail('thumbnail'); ?>
             </div>
         </div>
+        <span class="scroll-anchor"></span>
     </header>
     <div class="entry-content">
         <?php if(is_singular('post')) { ?>

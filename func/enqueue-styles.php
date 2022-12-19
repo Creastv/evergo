@@ -41,8 +41,15 @@ function enqueue_styles() {
         wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' );
         wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.min.css' );  
     }
+    if(is_page(95)){ //Contact us
+        wp_enqueue_style( 'go-constact-us', get_template_directory_uri().'/src/css/scss/parts/constact-us/contact-us.min.css' ); 
+    }
+    if(is_page(110)){ // Carrera
+        wp_enqueue_style( 'go-carrera', get_template_directory_uri().'/src/css/scss/parts/carrera/carrera.min.css' ); 
+    }
     if(is_singular('case-study')){ //Case study
         wp_enqueue_style( 'go-actions-effects', get_template_directory_uri().'/src/css/scss/parts/actions-effects/actions-effects.min.css' ); 
     }
+    
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );

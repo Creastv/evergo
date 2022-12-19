@@ -76,3 +76,10 @@ function pagination_bars() {
         ));
     }
 }
+
+// ACF MAp
+function my_acf_init() {
+	acf_update_setting( 'google_api_key', 'AIzaSyBfHh56hTMdOgX__L2r4Lcw20Sdwhvw64g' );
+}
+
+add_action( 'acf/init', 'my_acf_init' );

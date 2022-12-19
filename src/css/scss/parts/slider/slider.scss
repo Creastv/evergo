@@ -8,9 +8,15 @@
 .slider-home {
   .h1 {
     font-size: 64px;
+    @media #{$sm} {
+      font-size: 31px;
+    }
   }
   .slide {
     padding: 150px 0;
     padding-left: 15%;
+    @media #{$sm} {
+      padding-left: 0px;
+    }
   }
 }

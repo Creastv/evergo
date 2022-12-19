@@ -7,8 +7,20 @@
   font-size: 64px;
 }
 
+@media only screen and (max-width: 768px) {
+  .slider-home .h1 {
+    font-size: 31px;
+  }
+}
+
 .slider-home .slide {
   padding: 150px 0;
   padding-left: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-home .slide {
+    padding-left: 0px;
+  }
 }
 /*# sourceMappingURL=slider.css.map */

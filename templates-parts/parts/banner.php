@@ -2,6 +2,7 @@
 $left   = get_field('left');
 $right   = get_field('right');
 ?>
+<?php if($left  && $right) { ?>
 <section id="banner">
     <div class="banner__wraper">
         <div class="left">
@@ -14,3 +15,4 @@ $right   = get_field('right');
         </div>
     </div>
 </section>
+<?php } ?>

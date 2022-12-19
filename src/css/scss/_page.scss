@@ -24,19 +24,29 @@
     }
   }
   .t-page__sroll {
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: all 2s linear;
+    cursor: pointer;
     width: 40%;
-    @media #{$sm} {
-      width: 10%;
-    }
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 0 50px;
     position: relative;
     transform: translateY(15%);
+
     @media #{$sm} {
+      width: 10%;
       padding: 0 0 0 10px;
       transform: translate(-10px, 15%);
+    }
+    #Shape_3 {
+      // animation-name: scroll-line;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transition: all 0.2s linear;
     }
     span {
       margin-right: 20px;
