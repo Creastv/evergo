@@ -44,6 +44,7 @@ h6,
 .h4,
 .h5,
 .h6 {
+  font-family: "Conv_uni-sans.heavy-caps";
   font-weight: 400;
   color: #37444a;
   letter-spacing: 1px;
