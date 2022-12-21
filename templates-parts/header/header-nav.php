@@ -1,10 +1,10 @@
 <nav class="navbar__navigation js-navbar__navigation">
     <?php 
-	if ( wp_is_mobile() ) : 
-		$navLocation = 'mobile_menu';
-	else : 
+	// if ( wp_is_mobile() ) : 
+		// $navLocation = 'mobile_menu';
+	// else : 
 		$navLocation = 'primary_menu';
-	endif; 
+	// endif; 
     
 	$temp_menu = wp_nav_menu(array(
 		'theme_location'  => $navLocation, 
