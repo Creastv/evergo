@@ -74,12 +74,14 @@
   left: 20px;
   @media #{$sm} {
     position: relative;
-    left: 50px;
+    left: 0px;
   }
   .swiper-pagination {
     width: 100px !important;
     @media #{$sm} {
-      width: initial;
+      width: initial !important;
+      position: relative;
+      display: flex;
     }
     div {
       display: flex;
@@ -90,6 +92,11 @@
       display: flex;
       align-items: center;
       text-shadow: 0 0 2px #fff;
+      @media #{$sm} {
+        width: 50px;
+        align-items: center;
+        justify-content: center;
+      }
 
       .num {
         font-size: 18px;
@@ -104,6 +111,9 @@
         height: 1px;
         background-color: $main;
         margin-right: 30px;
+        @media #{$sm} {
+          display: none;
+        }
       }
       .num {
         font-size: 18px;

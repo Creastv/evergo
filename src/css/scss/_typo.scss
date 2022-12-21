@@ -129,6 +129,9 @@ a {
   margin: 0 auto;
   margin-bottom: 50px;
   .t-section__wraper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
     span {
       margin-bottom: 30px;
       display: block;
@@ -137,4 +140,9 @@ a {
       margin-bottom: 30px;
     }
   }
+}
+.t-section__wraper {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
 }

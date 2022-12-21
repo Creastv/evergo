@@ -89,7 +89,7 @@
 @media only screen and (max-width: 768px) {
   .pag-con {
     position: relative;
-    left: 50px;
+    left: 0px;
   }
 }
 
@@ -99,7 +99,11 @@
 
 @media only screen and (max-width: 768px) {
   .pag-con .swiper-pagination {
-    width: initial;
+    width: initial !important;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -118,6 +122,18 @@
   text-shadow: 0 0 2px #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .pag-con .swiper-pagination div {
+    width: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .pag-con .swiper-pagination div .num {
   font-size: 18px;
   color: #37444a !important;
@@ -133,6 +149,12 @@
   height: 1px;
   background-color: #e70680;
   margin-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .pag-con .swiper-pagination .swiper-pagination-bullet-active .sep {
+    display: none;
+  }
 }
 
 .pag-con .swiper-pagination .swiper-pagination-bullet-active .num {

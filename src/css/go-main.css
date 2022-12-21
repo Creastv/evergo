@@ -147,6 +147,12 @@ a {
   margin-bottom: 50px;
 }
 
+.t-section .t-section__wraper {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .t-section .t-section__wraper span {
   margin-bottom: 30px;
   display: block;
@@ -154,6 +160,12 @@ a {
 
 .t-section .t-section__wraper .t-section-title {
   margin-bottom: 30px;
+}
+
+.t-section__wraper {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 html {
