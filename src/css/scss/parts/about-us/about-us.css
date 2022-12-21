@@ -42,7 +42,7 @@
 }
 
 .about-us__wraper .about-us__col:nth-child(2) {
-  width: 60%;
+  width: 66.66%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -140,10 +140,15 @@
           flex: auto;
 }
 
+.about-us__cover .about-us__cover__content .h2 {
+  font-size: 31px;
+  line-height: 35px;
+}
+
 .about-us__cover .about-us__cover__content p {
   margin-bottom: 0px;
   color: #fff;
-  font-size: 31px;
+  font-size: 21px;
 }
 
 @media only screen and (max-width: 998px) {
@@ -155,6 +160,7 @@
 .about-us__cover .about-us__cover__content .btn {
   display: inline-block;
   color: #fff;
+  white-space: nowrap;
 }
 
 .about-us__cover .about-us__cover__content .btn:hover {

@@ -1118,7 +1118,6 @@ body {
 
 .posts-wraper .post-item {
   width: calc(50% - 20px);
-  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1130,7 +1129,6 @@ body {
 
 .posts-wraper--suggested .post-item {
   width: calc(33.333333% - 20px);
-  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 998px) {
