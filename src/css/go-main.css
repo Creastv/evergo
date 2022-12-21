@@ -1303,6 +1303,7 @@ body {
           transform: translateX(-50%);
   height: 84%;
   width: 1150px;
+  max-width: 100%;
   overflow: hidden;
 }
 
