@@ -3,6 +3,9 @@
 #slider-hero {
   position: relative;
   // max-height: 70vh;
+  .swiper-wrapper {
+    align-items: center;
+  }
 }
 
 .slider-home {
@@ -75,6 +78,7 @@
   @media #{$sm} {
     position: relative;
     left: 0px;
+    transform: translate(0, 40%);
   }
   .swiper-pagination {
     width: 100px !important;
