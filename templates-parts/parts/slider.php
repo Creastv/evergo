@@ -1,5 +1,5 @@
 <?php
-$slider    = get_field('quick_opinion'); 
+$slider    = get_field('slider'); 
 ?>
 
 <section id="slider-hero">
@@ -8,12 +8,25 @@ $slider    = get_field('quick_opinion');
             <div class="swiper-wrapper">
                 <?php foreach ($slider as $slide ) { ?>
                 <div class="swiper-slide">
-                    <div class="slide">
-                        <h1 class="h1 h1-slider">Make your digital<br>transformation a success</h1>
+                    <div class="slide <?php echo $slide['image'] ? 'c-white' : '' ?> ">
+                        <div class="slider__content">
+                            <h1 class="h1 h1-slider"><?php echo $slide['title']; ?></h1>
+                            <?php if($slide['subtitle']) { ?>
+                            <p><?php echo $slide['subtitle']; ?></p>
+                            <?php } ?>
+                        </div>
+                        <?php if($slide['image']) { ?>
+                        <div class="img" style="background-image: url(<?php echo $slide['image']; ?>)">
+                            <div class="bg"></div>
+                        </div>
+                        <?php } ?>
                     </div>
                 </div>
                 <?php } ?>
             </div>
+        </div>
+        <div class="pag-con">
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>

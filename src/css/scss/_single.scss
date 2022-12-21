@@ -173,10 +173,6 @@
   cursor: pointer;
   position: relative;
   width: 40px;
-  animation-name: scroll;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  transition: all 2s linear;
 
   &:before {
     content: "";
@@ -193,6 +189,10 @@
   svg {
     position: absolute;
     bottom: 0;
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: all 2s linear;
   }
 }
 .meta-group {
@@ -203,6 +203,7 @@
     padding: 10px;
     * {
       font-size: 16px;
+      color: $light-black;
     }
   }
   .meta-pub {

@@ -1,6 +1,11 @@
 <nav class="navbar__navigation js-navbar__navigation">
     <?php 
-    $navLocation = 'primary_menu';
+	if ( wp_is_mobile() ) : 
+		$navLocation = 'mobile_menu';
+	else : 
+		$navLocation = 'primary_menu';
+	endif; 
+    
 	$temp_menu = wp_nav_menu(array(
 		'theme_location'  => $navLocation, 
 		'menu_id' 	      => 'header-nav-list', 

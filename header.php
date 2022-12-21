@@ -23,9 +23,11 @@
                     <?php get_template_part('templates-parts/header/header', 'contact'); ?>
                     <?php get_template_part('templates-parts/header/header', 'burger'); ?>
                 </div>
+                <?php if(get_field('display_secundary_menu') && !wp_is_mobile()) { ?>
+                <?php get_template_part('templates-parts/header/header', 'second-menu'); ?>
+                <?php } ?>
             </div>
         </div>
-
     </header>
 
     <main id="main">

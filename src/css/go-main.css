@@ -50,7 +50,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "uni_sansheavy_caps";
+  font-family: "uni_sansheavy_caps", Helvetica, sans-serif;
   font-weight: 400;
   color: #37444a;
   letter-spacing: 1px;
@@ -88,9 +88,8 @@ h6,
   font-size: 0.67em;
 }
 
-p,
-span {
-  font-family: "URW DIN";
+p {
+  font-family: "URW DIN", Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
@@ -98,7 +97,19 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
-  p,
+  p {
+    font-size: 16px;
+  }
+}
+
+span {
+  font-family: "URW DIN", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 768px) {
   span {
     font-size: 16px;
   }
@@ -503,6 +514,10 @@ body {
 }
 
 #header .navbar {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: relative;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,9 +573,9 @@ body {
 }
 
 .js-header.active {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   background-color: #fff !important;
-  background-image: url("../img/header-bg.png") !important;
-  background-position: center top;
   position: fixed;
   top: 0;
   width: 100%;
@@ -570,6 +585,20 @@ body {
   .js-header.active {
     background-size: 95%;
   }
+}
+
+.js-header.active .navbar {
+  padding: 0px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .js-header.active .navbar {
+    padding: 20px 0 !important;
+  }
+}
+
+.js-header.active #second-menu ul li a {
+  padding: 10px 20px;
 }
 
 .header-bg {
@@ -584,7 +613,7 @@ body {
 }
 
 .navbar__brand {
-  padding-right: 40px;
+  padding-right: 30px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -619,7 +648,7 @@ body {
 .navbar__navigation ul {
   position: relative;
   border-left: 1px solid #c6ced3;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -646,12 +675,16 @@ body {
 
 .navbar__navigation ul li a {
   padding: 15px 10px;
-  font-size: 18px;
   font-weight: normal;
 }
 
+.navbar__navigation ul li a span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 1300px) {
-  .navbar__navigation ul li a {
+  .navbar__navigation ul li a span {
     font-size: 21px;
     display: block;
   }
@@ -668,19 +701,31 @@ body {
   }
 }
 
-.navbar__navigation ul .current_page_item > a {
+.navbar__navigation ul .current_page_item > a,
+.navbar__navigation ul .current-page-ancestor > a {
   color: #e70680 !important;
 }
 
 .navbar__navigation.active ul {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  right: 0px !important;
+  right: -15px !important;
+  padding-right: 30px;
+  border: none;
 }
 
 .navbar__navigation.active ul li {
-  -webkit-transition: all 0.8s linear;
-  transition: all 0.8s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.navbar__navigation.active ul li a {
+  padding: 0 !important;
+}
+
+.navbar__navigation.active .sub-menu {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -693,7 +738,7 @@ body {
 
 .navbar__contact li {
   border-left: 1px solid #c6ced3;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .navbar__contact li:first-child {
@@ -701,12 +746,30 @@ body {
   border-left: 0px solid #c6ced3;
 }
 
+.navbar__contact li:first-child a {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .navbar__contact li:first-child a {
+    margin-right: 15px;
+  }
+}
+
 .navbar__contact li a {
-  padding: 15px 10px;
+  padding: 15px 0px;
 }
 
 .navbar__contact li .btn {
   padding: 10px 25px;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .navbar__contact li .btn {
+    margin-left: 15px;
+    margin-right: 45px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -766,6 +829,8 @@ body {
           transform: translateY(20px);
   opacity: 0;
   pointer-events: none;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.8);
 }
 
 @media only screen and (max-width: 1300px) {
@@ -781,8 +846,11 @@ body {
 
 .sub-menu li a {
   display: block;
-  font-size: 14px !important;
   padding: 5px 10px !important;
+}
+
+.sub-menu li a span {
+  font-size: 14px !important;
 }
 
 .navbar__toggler {
@@ -857,6 +925,66 @@ body {
           transform-origin: 30% 0;
 }
 
+#second-menu {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  background-color: #eaf2f7;
+}
+
+@media only screen and (max-width: 768px) {
+  #second-menu {
+    display: none;
+  }
+}
+
+#second-menu ul {
+  padding-left: 210px;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  #second-menu ul {
+    padding-left: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+#second-menu ul li a {
+  text-decoration: none;
+  color: #37444a;
+  padding: 20px;
+  display: block;
+}
+
+#second-menu ul li a:hover {
+  color: #e70680;
+}
+
+#second-menu ul li:first-child a {
+  padding-left: 11px !important;
+}
+
+@media only screen and (max-width: 1400px) {
+  #second-menu ul li:last-child a {
+    padding-right: 0px !important;
+  }
+}
+
+#second-menu ul .current_page_item a {
+  color: #e70680;
+}
+
 .t-page {
   padding: 100px 0;
   display: -webkit-box;
@@ -898,14 +1026,6 @@ body {
 }
 
 .t-page .t-page__sroll {
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
   cursor: pointer;
   width: 40%;
   display: -webkit-box;
@@ -932,13 +1052,15 @@ body {
   }
 }
 
-.t-page .t-page__sroll #Shape_3 {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+.t-page .t-page__sroll svg {
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
 }
 
 .t-page .t-page__sroll span {
@@ -1216,14 +1338,6 @@ body {
   cursor: pointer;
   position: relative;
   width: 40px;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
 }
 
 .t-page-sroll:before {
@@ -1245,6 +1359,14 @@ body {
 .t-page-sroll svg {
   position: absolute;
   bottom: 0;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
 }
 
 .meta-group {
@@ -1262,6 +1384,7 @@ body {
 
 .meta-group .meta * {
   font-size: 16px;
+  color: #6e828e;
 }
 
 .meta-group .meta-pub {

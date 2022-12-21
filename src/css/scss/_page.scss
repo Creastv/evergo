@@ -24,10 +24,6 @@
     }
   }
   .t-page__sroll {
-    animation-name: scroll;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    transition: all 2s linear;
     cursor: pointer;
     width: 40%;
     display: flex;
@@ -42,11 +38,11 @@
       padding: 0 0 0 10px;
       transform: translate(-10px, 15%);
     }
-    #Shape_3 {
-      // animation-name: scroll-line;
-      animation-duration: 2s;
+    svg {
+      animation-name: scroll;
+      animation-duration: 4s;
       animation-iteration-count: infinite;
-      transition: all 0.2s linear;
+      transition: all 2s linear;
     }
     span {
       margin-right: 20px;

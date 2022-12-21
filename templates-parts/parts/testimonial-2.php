@@ -2,6 +2,7 @@
 $people   = get_field('testimonial'); 
 $header   = get_field('header_testimonial');
 ?>
+<?php if($people && $header) { ?>
 <section id="testimonial-2">
     <div class="t-section text-center">
         <div class="t-section__wraper">
@@ -52,3 +53,4 @@ $header   = get_field('header_testimonial');
     </div>
     <?php } ?>
 </section>
+<?php } ?>

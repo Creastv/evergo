@@ -53,7 +53,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "uni_sansheavy_caps";
+  font-family: "uni_sansheavy_caps", Helvetica, sans-serif;
   font-weight: 400;
   color: $black;
   letter-spacing: 1px;
@@ -82,13 +82,22 @@ h6,
   font-size: 0.67em;
 }
 
-p,
-span {
-  font-family: "URW DIN";
+p {
+  font-family: "URW DIN", Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   color: $light-black;
+  @media #{$sm} {
+    font-size: 16px;
+  }
+}
+
+span {
+  font-family: "URW DIN", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
   @media #{$sm} {
     font-size: 16px;
   }
