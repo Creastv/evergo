@@ -1,14 +1,18 @@
 // Title page
 .t-page {
-  padding: 100px 0;
+  position: relative;
+  padding: 100px 100px 100px 0px;
   display: flex;
   @media #{$sm} {
-    padding: 50px 0;
+    padding: 50px 80px 50px 0;
   }
   .t-page__content {
     width: 60%;
+    @media #{$lg} {
+      width: 80%;
+    }
     @media #{$sm} {
-      width: 90%;
+      width: 100%;
     }
     .entry-title {
       margin: 0;
@@ -25,24 +29,36 @@
   }
   .t-page__sroll {
     cursor: pointer;
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 0 50px;
-    position: relative;
-    transform: translateY(15%);
+    // width: 40%;
+    position: absolute;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: flex-end;
+    // padding: 0 50px;
+    // position: relative;
+    // transform: translateY(15%);
+
+    right: 0px;
+    height: 60%;
+    top: 30%;
 
     @media #{$sm} {
       width: 10%;
       padding: 0 0 0 10px;
       transform: translate(-10px, 15%);
+      top: 20%;
     }
     svg {
       animation-name: scroll;
       animation-duration: 4s;
       animation-iteration-count: infinite;
       transition: all 2s linear;
+      position: absolute;
+      bottom: 0;
+      right: 47px;
+      @media #{$sm} {
+        right: 0px;
+      }
     }
     span {
       margin-right: 20px;

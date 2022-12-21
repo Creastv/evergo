@@ -54,7 +54,6 @@ $displayHeader  = get_field('display_header');
 		?>
     </div>
     <div class="t-page__sroll js-scroll">
-        <span>Learn more</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
             <g id="Group_1" data-name="Group 1" transform="translate(-1996 -461)">
                 <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1996 461)" fill="none" stroke="#c6ced3" stroke-width="1">
