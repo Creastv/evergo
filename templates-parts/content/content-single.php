@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" class="single-post hentry" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="single-post hentry">
     <header>
         <div class="t-page-wraper">
             <div class="t-page-title">
@@ -43,7 +43,7 @@
             </div>
             <div class="meta meta-pub">
                 <span><b><?php _e('Publication date: ', 'go' ); ?></b></span>
-                <time class="meta meta-data-pub published" datetime="<?php the_time('m-j-y g:i-A') ?>"> <span><?php the_time('d.m.Y');?></span></time>
+                <time class="meta meta-data-pub published" datetime="<?php the_time('d.m.Y') ?>"> <span><?php the_time('d.m.Y');?></span></time>
             </div>
         </div>
         <hr class="hr">

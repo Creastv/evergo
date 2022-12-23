@@ -33,7 +33,7 @@ $bg       = get_field('background');
                         </div>
                         <div class="testimonial__item__bottom">
                             <div class="stars">
-                                <img src="<?php echo get_template_directory_uri() ?>'/src/img/stars-<?php echo $person['stars'];  ?>.png' ; ?>" />
+                                <img src="<?php echo get_template_directory_uri() ?>'/src/img/stars-<?php echo $person['stars'];  ?>.png' ; ?>" alt="stars-<?php echo $person['stars'];  ?>" />
                             </div>
                             <p><?php echo $person['opinion']; ?></p>
                             <span><b><?php echo $person['desc']; ?></b></span>
