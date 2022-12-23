@@ -43,7 +43,7 @@
             </div>
             <div class="meta meta-pub">
                 <span><b><?php _e('Publication date: ', 'go' ); ?></b></span>
-                <time class="meta meta-data-pub published" datetime="<?php the_time('d.m.Y') ?>"> <span><?php the_time('d.m.Y');?></span></time>
+                <time class="meta meta-data-pub published" datetime="<?php the_time() ?>"> <span><?php the_time('d.m.Y');?></span></time>
             </div>
         </div>
         <hr class="hr">
