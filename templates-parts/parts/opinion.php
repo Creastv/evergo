@@ -14,7 +14,7 @@ $opinion    = get_field('quick_opinion');
                     <p class="h3"><?php echo $leftcolumn['title']; ?></p>
                     <?php } ?>
                     <?php if($leftcolumn['description']) { ?>
-                    <p><?php echo $leftcolumn['description']; ?></p>
+                    <?php echo $leftcolumn['description']; ?>
                     <?php } ?>
                 </div>
             </div>
