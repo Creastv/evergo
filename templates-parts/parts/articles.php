@@ -26,7 +26,7 @@ $header   = get_field('header_articles', 'options');
         <div class="row">
             <div class="posts-wraper posts-wraper--suggested">
                 <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-                <article id="post-<?php the_ID(); ?>" class="post-item">
+                <article id="post-<?php the_ID(); ?>">
                     <header>
                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post'); ?></a>
                         <div class="meta-group">
