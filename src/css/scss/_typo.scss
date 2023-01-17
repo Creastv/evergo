@@ -141,6 +141,11 @@ a {
     // width: 1000px;
     max-width: 100%;
     margin: 0 auto;
+    br {
+      @media #{$sm} {
+        display: none;
+      }
+    }
     span {
       margin-bottom: 30px;
       display: block;

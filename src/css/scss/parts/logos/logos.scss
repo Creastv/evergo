@@ -6,12 +6,26 @@
     margin-bottom: 50px;
   }
   .logos {
+    .swiper-wrapper {
+      align-items: center;
+    }
     .swiper-slide {
       .logo {
         padding: 10px;
         img {
           max-width: 100%;
           height: auto;
+          filter: grayscale(100%);
+          transition: all 0.3s linear;
+          opacity: 0.3;
+        }
+        a {
+          &:hover {
+            img {
+              opacity: 1;
+              filter: grayscale(0%);
+            }
+          }
         }
       }
     }

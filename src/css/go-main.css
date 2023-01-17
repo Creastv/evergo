@@ -145,6 +145,12 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .t-section .t-section__wraper br {
+    display: none;
+  }
+}
+
 .t-section .t-section__wraper span {
   margin-bottom: 30px;
   display: block;
