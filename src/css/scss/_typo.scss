@@ -155,7 +155,7 @@ a {
   max-width: 100%;
   margin: 0px auto;
   br {
-    @media #{$sm} {
+    @media #{$md} {
       display: none;
     }
   }
