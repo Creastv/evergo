@@ -2,7 +2,11 @@
     <header>
         <div class="t-page-wraper">
             <div class="t-page-title">
+                <?php if(is_singular('post')) { ?>
                 <span>Blog</span>
+                <?php } else { ?>
+                <span>Success Story</span>
+                <?php } ?>
                 <h1 class="entry-title">
                     <?php the_title(); ?>
                 </h1>
