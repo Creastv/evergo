@@ -1,5 +1,5 @@
 <?php
-$leftColumn   = get_field('left_column');
+$rightColumn   = get_field('right_column');
 
 $leftc       = get_field('left_column_baner');
 
