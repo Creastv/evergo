@@ -29,6 +29,12 @@
   max-width: 80%;
 }
 
+@media only screen and (max-width: 1300px) {
+  .slider-home br {
+    display: none;
+  }
+}
+
 .slider-home .slider__content {
   max-width: 1440px;
   width: 90%;

@@ -26,6 +26,11 @@
     font-size: 21px !important;
     max-width: 80%;
   }
+  br {
+    @media #{$lg} {
+      display: none;
+    }
+  }
   .slider__content {
     max-width: 1440px;
     width: 90%;
