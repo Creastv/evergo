@@ -22,7 +22,7 @@ function go_post_types_case_study() {
 		'publicly_queryable' => true,
 		'show_in_rest' => true,
 		"rewrite"             => array( "slug" => "case-study", "with_front" => true ),
-		'supports'      => array( 'title', 'page-attributes', 'thumbnail', 'editor' ),
+		'supports'      => array( 'title', 'page-attributes', 'thumbnail', 'editor', 'excerpt' ),
 		// , 'editor' 
 	);
     register_post_type( 'case-study', $args );
