@@ -97,3 +97,27 @@ function filter_plugin_updates( $value ) {
 	}
 	return $value;
 }
+
+
+// colors
+function ka_override_MCE_options($init)
+  {
+
+    $custom_colors = '
+          "e70680", "Main color",
+          "37444a", "Black",
+          "6e828e", "Light black",
+          "c6ced3", "Gray",
+          "d7d7d7", "Gary dark",
+          "eaf2f7", "Light",
+      ';
+    // build color grid palette
+    $init['textcolor_map'] = '[' . $custom_colors . ']';
+
+    // change the number of rows in the grid if the number of colors changes
+    // 8 swatches per row
+    $init['textcolor_rows'] = 1;
+
+    return $init;
+  }
+  add_filter('tiny_mce_before_init', 'ka_override_MCE_options');

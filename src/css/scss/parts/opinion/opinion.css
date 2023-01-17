@@ -14,9 +14,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .opinion__wraper .opinion__wraper__col {
@@ -36,6 +33,12 @@
 
 .opinion__wraper .opinion__wraper__col:nth-child(2) {
   padding: 40px;
+}
+
+.opinion__wraper__content {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
 }
 
 .opinion__wraper__content .top {

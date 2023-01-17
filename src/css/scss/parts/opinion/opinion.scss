@@ -10,7 +10,7 @@
 .opinion__wraper {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  // align-items: center;
 
   .opinion__wraper__col {
     width: 50%;
@@ -28,6 +28,9 @@
 }
 
 .opinion__wraper__content {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
   .top {
     display: flex;
     align-items: center;
