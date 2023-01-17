@@ -1,12 +1,15 @@
 <?php
 $header   = get_field('header_articles', 'options');
-
   $posts = new WP_Query( array(
         'post_type' => 'post',
         'posts_per_page' => 3,
         'order' => 'DESC',
     ));
+
+$chosenposts = get_field('select_posts', 'options');
+
 ?>
+
 <section id="articles">
     <div class="t-section text-center">
         <div class="t-section__wraper">
@@ -25,6 +28,37 @@ $header   = get_field('header_articles', 'options');
     <div class="container">
         <div class="row">
             <div class="posts-wraper posts-wraper--suggested">
+                <?php if($chosenposts) { ?>
+                <?php foreach( $chosenposts as $post ): 
+                    setup_postdata($post); ?>
+                <article class="post-item" id="post-<?php the_ID(); ?>">
+                    <header>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post'); ?></a>
+                        <div class="meta-group">
+                            <div class="meta meta-category">
+                                <span><b><?php _e(' Cat: ', 'go' ); ?></b></span>
+                                <?php the_category();?>
+                            </div>
+                            <div class="meta meta-pub">
+                                <span><b><?php _e('Publication date: ', 'go' ); ?></b></span>
+                                <time class="meta meta-data-pub published" datetime="<?php the_time() ?>"> <span><?php the_time('d.m.Y');?></span></time>
+                            </div>
+                        </div>
+                    </header>
+                    <hr>
+                    <footer>
+                        <h3 class=" title-page">
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h3>
+                        <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                    </footer>
+                </article>
+                <?php endforeach; ?>
+
+                <?php 
+                // Reset the global post object so that the rest of the page works correctly.
+                wp_reset_postdata(); ?>
+                <?php } else { ?>
                 <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
                 <article class="post-item" id="post-<?php the_ID(); ?>">
                     <header>
@@ -49,6 +83,8 @@ $header   = get_field('header_articles', 'options');
                     </footer>
                 </article>
                 <?php endwhile; wp_reset_query(); ?>
+
+                <?php }?>
             </div>
         </div>
     </div>

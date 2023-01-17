@@ -68,4 +68,19 @@
 #post-baner .bg .bg__wraper .right .btn:hover {
   background-color: #e70680;
 }
+
+.btn {
+  color: #37444a;
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: 1px solid #c6ced3;
+  text-decoration: none;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.btn:hover {
+  border-color: #e70680;
+  color: #e70680;
+}
 /*# sourceMappingURL=banner.css.map */
