@@ -135,14 +135,12 @@ a {
 }
 
 .t-section {
-  max-width: 820px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
 .t-section .t-section__wraper {
-  width: 1000px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -153,13 +151,13 @@ a {
 }
 
 .t-section .t-section__wraper .t-section-title {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .t-section__wraper {
-  width: 1000px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 html {
