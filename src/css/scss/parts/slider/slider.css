@@ -1,5 +1,6 @@
 #slider-hero {
   position: relative;
+  margin-bottom: 30px;
 }
 
 #slider-hero .swiper-wrapper {
@@ -18,6 +19,12 @@
   font-size: 54px;
 }
 
+@media only screen and (max-width: 998px) {
+  .slider-home .h1 {
+    font-size: 38px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .slider-home .h1 {
     font-size: 31px;
@@ -27,6 +34,13 @@
 .slider-home p {
   font-size: 21px !important;
   max-width: 80%;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-home p {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -42,9 +56,27 @@
   padding: 50px 30px;
 }
 
+@media only screen and (max-width: 998px) {
+  .slider-home .slider__content {
+    padding: 30px 15px;
+  }
+}
+
 .slider-home .slide {
   padding-left: 15%;
   position: relative;
+}
+
+@media only screen and (max-width: 1400px) {
+  .slider-home .slide {
+    padding-left: 12%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-home .slide {
+    padding-left: 0px;
+  }
 }
 
 .slider-home .slide a {
@@ -95,6 +127,7 @@
     left: 0px;
     -webkit-transform: translate(0, 40%);
             transform: translate(0, 40%);
+    margin-bottom: 50px;
   }
 }
 
