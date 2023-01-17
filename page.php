@@ -15,10 +15,10 @@ while ( have_posts() ) : the_post(); ?>
 		get_template_part( 'templates-parts/parts/numbers' );
 		get_template_part( 'templates-parts/parts/testimonial' );
 	 } else if (is_page(17)){ // About us
-		get_template_part( 'templates-parts/parts/about-us-ext' );
 		get_template_part( 'templates-parts/parts/numbers' );
+		get_template_part( 'templates-parts/parts/about-us-ext' );
 		get_template_part( 'templates-parts/parts/business-areas' );
-		get_template_part( 'templates-parts/parts/testimonial' );
+		// get_template_part( 'templates-parts/parts/testimonial' );
 	 } else if (is_page(21)){ //Case study
 		get_template_part( 'templates-parts/parts/case-study' );
 		get_template_part( 'templates-parts/parts/banner' );
