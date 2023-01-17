@@ -1,0 +1,63 @@
+$xs: "only screen and (max-width: 460px)";
+$sm: "only screen and (max-width: 768px)";
+$md: "only screen and (max-width: 998px)";
+$lg: "only screen and (max-width: 1300px)";
+$xlg: "only screen and (max-width: 1400px)";
+
+$main: #e70680;
+$black: #37444a;
+$light-black: #6e828e;
+$light: #eaf2f7;
+$dark: #d7d7d7;
+$gray: #c6ced3;
+
+#post-baner {
+  background-color: $light-black;
+  background-position: center;
+  position: relative;
+  margin: 30px 0 40px;
+  .bg {
+    // min-height: 200px;
+    padding: 100px 40px 0px 40px;
+    background-color: rgba(55, 68, 74, 0.5);
+    .bg__wraper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0 0;
+      .left {
+        width: 70%;
+        @media #{$sm} {
+          width: 100%;
+        }
+        p {
+          font-family: "Conv_uni-sans.heavy-caps", Helvetica, sans-serif;
+          font-size: 21px;
+          letter-spacing: 1px;
+          word-spacing: 5px;
+        }
+        * {
+          color: #fff;
+        }
+      }
+      .right {
+        width: 30%;
+        text-align: right;
+        @media #{$sm} {
+          width: 100%;
+          text-align: left;
+          display: inline-block;
+          margin-bottom: 40px;
+        }
+        .btn {
+          color: #fff;
+          &:hover {
+            background-color: $main;
+          }
+        }
+      }
+    }
+  }
+}

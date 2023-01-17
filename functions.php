@@ -48,6 +48,7 @@ require_once get_template_directory() . '/func/enqueue-styles.php';
 require_once get_template_directory() . '/func/enqueue-scripts.php';
 require get_template_directory() . '/func/clean-up.php';
 require get_template_directory() . '/func/cpt.php';
+require get_template_directory() . '/blocks/blocks.php';
 
 
 if ( function_exists( 'acf_add_options_page' ) ) {
