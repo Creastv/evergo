@@ -15,7 +15,7 @@
 }
 
 .slider-home .h1 {
-  font-size: 64px;
+  font-size: 54px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -29,7 +29,7 @@
   max-width: 80%;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   .slider-home br {
     display: none;
   }

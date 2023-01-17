@@ -17,7 +17,7 @@
   margin-left: -46vw;
   left: 50%;
   .h1 {
-    font-size: 64px;
+    font-size: 54px;
     @media #{$sm} {
       font-size: 31px;
     }
@@ -27,7 +27,7 @@
     max-width: 80%;
   }
   br {
-    @media #{$lg} {
+    @media #{$xlg} {
       display: none;
     }
   }
