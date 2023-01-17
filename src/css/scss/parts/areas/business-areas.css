@@ -69,6 +69,7 @@
       -ms-grid-row-align: stretch;
       align-self: stretch;
   text-align: center;
+  width: 33.3333%;
 }
 
 .areas__item .areas__item__wraper {
