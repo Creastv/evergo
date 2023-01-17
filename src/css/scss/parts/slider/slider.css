@@ -54,6 +54,10 @@
   }
 }
 
+.slider-home .slide a {
+  text-decoration: none !important;
+}
+
 .slider-home .img {
   position: absolute;
   z-index: -1;
