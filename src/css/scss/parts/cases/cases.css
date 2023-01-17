@@ -103,10 +103,6 @@
   }
 }
 
-#cases .case__item .right p {
-  margin-bottom: 30px;
-}
-
 #cases .case__item .right .btn {
   display: inline-block;
 }

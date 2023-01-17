@@ -102,6 +102,7 @@ ul {
   font-size: 16px;
   line-height: 28px;
   color: #6e828e;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 768px) {
