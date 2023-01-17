@@ -26,9 +26,9 @@
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
+    padding: 100px 50px;
   }
   .slide {
-    padding: 100px 50px;
     padding-left: 15%;
     position: relative;
     @media #{$xlg} {
