@@ -2,9 +2,13 @@
 
 #slider-hero {
   position: relative;
+  // min-height: 500px;
   // max-height: 70vh;
   .swiper-wrapper {
     align-items: center;
+    // position: absolute;
+    // top: 50%;
+    // transform: translate(0, -50%);
   }
 }
 
@@ -26,18 +30,18 @@
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
-    padding: 70px 50px;
+    padding: 50px 30px;
   }
   .slide {
     padding-left: 15%;
     position: relative;
-    @media #{$xlg} {
-      padding: 80px 50px;
-      padding-left: 12%;
-    }
-    @media #{$sm} {
-      padding: 50px 0px;
-    }
+    // @media #{$xlg} {
+    //   padding: 80px 50px;
+    //   padding-left: 12%;
+    // }
+    // @media #{$sm} {
+    //   padding: 50px 0px;
+    // }
     a {
       text-decoration: none !important;
     }
