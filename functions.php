@@ -102,7 +102,6 @@ function filter_plugin_updates( $value ) {
 // colors
 function ka_override_MCE_options($init)
   {
-
     $custom_colors = '
           "e70680", "Main color",
           "37444a", "Black",
@@ -121,3 +120,9 @@ function ka_override_MCE_options($init)
     return $init;
   }
   add_filter('tiny_mce_before_init', 'ka_override_MCE_options');
+
+// Excerpt changing 3 dots
+  Function new_excerpt_more( $more ) {
+	return ' ... ';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
