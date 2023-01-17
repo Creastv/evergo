@@ -36,7 +36,7 @@
 }
 
 .slider-home .slide {
-  padding: 150px 50px;
+  padding: 100px 50px;
   padding-left: 15%;
   position: relative;
 }
@@ -86,7 +86,7 @@
 .pag-con {
   position: absolute;
   z-index: 5;
-  top: 54%;
+  top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   left: 20px;
@@ -102,6 +102,7 @@
 }
 
 .pag-con .swiper-pagination {
+  position: relative;
   width: 100px !important;
 }
 
