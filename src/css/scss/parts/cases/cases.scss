@@ -27,8 +27,11 @@
       }
     }
     .left {
+      align-self: stretch;
+      overflow: hidden;
       width: 50%;
       position: relative;
+      min-height: 350px;
       @media #{$sm} {
         width: 100%;
       }
@@ -43,9 +46,19 @@
         background-color: rgba(55, 68, 74, 0.4);
       }
       img {
+        // width: 100%;
+        // height: auto;
+        // display: block;
+
         width: 100%;
-        height: auto;
+        height: 100%;
+
         display: block;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
     .right {

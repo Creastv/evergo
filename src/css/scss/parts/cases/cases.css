@@ -52,8 +52,13 @@
 }
 
 #cases .case__item .left {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  overflow: hidden;
   width: 50%;
   position: relative;
+  min-height: 350px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -75,8 +80,15 @@
 
 #cases .case__item .left img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #cases .case__item .right {
