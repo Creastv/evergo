@@ -96,6 +96,20 @@ p {
   }
 }
 
+ul {
+  font-family: "URW DIN", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6e828e;
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    font-size: 16px;
+  }
+}
+
 span {
   font-family: "URW DIN", Helvetica, sans-serif;
   font-weight: normal;
