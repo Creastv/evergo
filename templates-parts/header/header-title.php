@@ -44,7 +44,7 @@ $displayHeader  = get_field('display_header');
 					elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
 						_e( 'Links', 'go' );
 					else :
-						_e( 'Blog', 'go' );
+						_e( 'Insights', 'go' );
 				endif; ?>
         </h1>
         <?php if($header['excerpt']) { ?>
