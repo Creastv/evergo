@@ -385,3 +385,24 @@
     }
   }
 }
+
+.lang-swicher {
+  position: relative;
+  z-index: 33;
+  @media #{$lg} {
+    order: 2;
+    margin-right: 25px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        margin: 10px;
+      }
+    }
+    .active {
+      color: $main;
+    }
+  }
+}

@@ -305,14 +305,6 @@ body {
   margin-top: -100px;
 }
 
-.lang-swicher ul li a {
-  margin: 10px;
-}
-
-.lang-swicher ul .active {
-  color: #e70680;
-}
-
 .f-main {
   padding: 20px 0;
 }
@@ -1039,6 +1031,33 @@ body {
 }
 
 #second-menu ul .current_page_item a {
+  color: #e70680;
+}
+
+.lang-swicher {
+  position: relative;
+  z-index: 33;
+}
+
+@media only screen and (max-width: 1300px) {
+  .lang-swicher {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 25px;
+  }
+}
+
+.lang-swicher ul {
+  margin: 0;
+  padding: 0;
+}
+
+.lang-swicher ul li a {
+  margin: 10px;
+}
+
+.lang-swicher ul .active {
   color: #e70680;
 }
 
