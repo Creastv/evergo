@@ -1,6 +1,7 @@
 <?php
 get_header();
 while ( have_posts() ) : the_post(); ?>
+<!-- test -->
 <article id="post-<?php the_ID(); ?>" class="hentry">
     <?php
 	get_template_part( 'templates-parts/header/header', 'title' ); 
@@ -26,7 +27,7 @@ while ( have_posts() ) : the_post(); ?>
 	 } else if (is_page(19)){ //service
 		get_template_part( 'templates-parts/parts/business-areas' );
 		get_template_part( 'templates-parts/parts/testimonial' );
-	  } else if (is_page(95)){ //Contact us
+	  } else if (is_page(array(95, 589))){ //Contact us
 		get_template_part( 'templates-parts/parts/contact-us' );
 	  } else if (is_page(110)){ //carrer
 		get_template_part( 'templates-parts/parts/carrera' );

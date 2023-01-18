@@ -91,3 +91,16 @@ body {
   position: absolute;
   margin-top: -100px;
 }
+
+.lang-swicher {
+  ul {
+    li {
+      a {
+        margin: 10px;
+      }
+    }
+    .active {
+      color: $main;
+    }
+  }
+}

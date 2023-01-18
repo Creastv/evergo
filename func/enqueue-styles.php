@@ -41,7 +41,7 @@ function enqueue_styles() {
         wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' );
         wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.min.css' );  
     }
-    if(is_page(95)){ //Contact us
+    if(is_page(array(95, 589))){ //Contact us
         wp_enqueue_style( 'go-constact-us', get_template_directory_uri().'/src/css/scss/parts/constact-us/contact-us.min.css' ); 
     }
     if(is_page(110)){ // Carrera

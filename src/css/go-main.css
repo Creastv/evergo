@@ -305,6 +305,14 @@ body {
   margin-top: -100px;
 }
 
+.lang-swicher ul li a {
+  margin: 10px;
+}
+
+.lang-swicher ul .active {
+  color: #e70680;
+}
+
 .f-main {
   padding: 20px 0;
 }
