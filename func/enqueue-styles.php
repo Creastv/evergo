@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function enqueue_styles() {
     wp_enqueue_style( 'go-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'go-custome-style', get_template_directory_uri().'/src/css/go-main.min.css' ); 
-    if(is_page(array(10))){ //home
+    if(is_page(array(10, 876))){ //home
        wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
        wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.css' ); 
        wp_enqueue_style( 'go-numbers', get_template_directory_uri().'/src/css/scss/parts/numbers/numbers.min.css' ); 
@@ -17,14 +17,14 @@ function enqueue_styles() {
        wp_enqueue_style( 'go-opinion', get_template_directory_uri().'/src/css/scss/parts/opinion/opinion.min.css' ); 
        wp_enqueue_style( 'go-slider', get_template_directory_uri().'/src/css/scss/parts/slider/slider.min.css' ); 
     }
-    if(is_page(array(17))){ //about-us
+    if(is_page(array(17, 886))){ //about-us
        wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
        wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.min.css' ); 
        wp_enqueue_style( 'go-numbers', get_template_directory_uri().'/src/css/scss/parts/numbers/numbers.min.css' ); 
        wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' );
        wp_enqueue_style( 'go-about-us-ext', get_template_directory_uri().'/src/css/scss/parts/about-us/about-us-ext.min.css' ); 
     }
-    if(is_page(array(21))){ //case studys
+    if(is_page(array(21, 899))){ //case studys
         wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
         wp_enqueue_style( 'go-cases', get_template_directory_uri().'/src/css/scss/parts/cases/cases.min.css' ); 
         wp_enqueue_style( 'go-banner', get_template_directory_uri().'/src/css/scss/parts/banner/banner.min.css' ); 
@@ -36,15 +36,15 @@ function enqueue_styles() {
         wp_enqueue_style( 'go-banner', get_template_directory_uri().'/src/css/scss/parts/banner/banner.min.css' ); 
         wp_enqueue_style( 'go-testimonial-2', get_template_directory_uri().'/src/css/scss/parts/testimonial-2/testimonial-2.min.css' ); 
      }
-    if (is_page(19)){ //service
+    if (is_page(array(19, 895))){ //service
         wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
         wp_enqueue_style( 'go-areas', get_template_directory_uri().'/src/css/scss/parts/areas/business-areas.min.css' );
         wp_enqueue_style( 'go-testimonial', get_template_directory_uri().'/src/css/scss/parts/testimonial/testimonial.min.css' );  
     }
-    if(is_page(array(95, 589))){ //Contact us
+    if(is_page(array(95, 874, 589))){ //Contact us
         wp_enqueue_style( 'go-constact-us', get_template_directory_uri().'/src/css/scss/parts/constact-us/contact-us.min.css' ); 
     }
-    if(is_page(110)){ // Carrera
+    if(is_page(array(110, 889))){ // Carrera
         wp_enqueue_style( 'go-carrera', get_template_directory_uri().'/src/css/scss/parts/carrera/carrera.min.css' ); 
     }
     if(is_singular('case-study')){ //Case study

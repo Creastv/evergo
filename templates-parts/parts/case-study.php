@@ -18,7 +18,7 @@ $cases   = get_field('case_study' );
             <div class="right">
                 <h2><?php echo $title; ?></h2>
                 <p><?php echo $excerpt; ?></p>
-                <a href="<?php echo $permalink; ?>" class="btn">Read more</a>
+                <a href="<?php echo $permalink; ?>" class="btn"><?php _e( 'Read more', 'go' ); ?></a>
             </div>
         </article>
         <?php } ?>

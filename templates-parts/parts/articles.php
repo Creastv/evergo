@@ -50,7 +50,7 @@ $chosenposts = get_field('select_posts', 'options');
                         <h3 class=" title-page">
                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         </h3>
-                        <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                        <a href="<?php the_permalink(); ?>" class="btn"><?php _e( 'Read more', 'go' ); ?></a>
                     </footer>
                 </article>
                 <?php endforeach; ?>
@@ -79,7 +79,7 @@ $chosenposts = get_field('select_posts', 'options');
                         <h3 class=" title-page">
                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         </h3>
-                        <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                        <a href="<?php the_permalink(); ?>" class="btn"><?php _e( 'Read more', 'go' ); ?></a>
                     </footer>
                 </article>
                 <?php endwhile; wp_reset_query(); ?>
