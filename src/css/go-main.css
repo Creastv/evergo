@@ -777,6 +777,10 @@ body {
   }
 }
 
+.navbar__contact > ul {
+  padding: 0 20px;
+}
+
 .navbar__contact li {
   border-left: 1px solid #c6ced3;
   padding: 20px 0;
@@ -1040,6 +1044,14 @@ body {
 }
 
 @media only screen and (max-width: 1300px) {
+  .lang-swicher {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .lang-swicher {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;

@@ -170,6 +170,9 @@
   @media #{$lg} {
     order: 2;
   }
+  > ul {
+    padding: 0 20px;
+  }
   li {
     border-left: 1px solid $gray;
     padding: 20px 0;
@@ -390,6 +393,9 @@
   position: relative;
   z-index: 33;
   @media #{$lg} {
+    order: 2;
+  }
+  @media #{$sm} {
     order: 2;
     margin-right: 25px;
   }
