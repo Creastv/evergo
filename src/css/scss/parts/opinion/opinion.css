@@ -70,6 +70,13 @@
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  .opinion__wraper__content .top p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
 .opinion__wraper__content .top span {
   font-size: 14px;
   line-height: 17px;

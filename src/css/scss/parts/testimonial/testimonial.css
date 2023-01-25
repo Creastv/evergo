@@ -82,6 +82,12 @@
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .testimonial__item {
+    padding: 15px;
+  }
+}
+
 .testimonial__item__top {
   display: -webkit-box;
   display: -ms-flexbox;
