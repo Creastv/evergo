@@ -23,8 +23,11 @@ $areas    = get_field('areas');
         <div class="areas__item">
             <div class="areas__item__wraper">
                 <div class="icon">
-                    <?php // echo wp_get_attachment_image( $area['icon'], 'icon' ); ?>
+                    <?php if( !$area['icon_swicher']){ ?>
+                    <?php echo wp_get_attachment_image( $area['icon_img'], 'person' ); ?>
+                    <?php } else { ?>
                     <?php echo $area['icon'] ?>
+                    <?php } ?>
                 </div>
                 <h3><a href="<?php echo $area['link']['url']?>"> <?php echo $area['title'] ;?></a></h3>
                 <p><?php echo $area['description'] ;?></p>
