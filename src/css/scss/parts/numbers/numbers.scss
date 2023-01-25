@@ -53,6 +53,9 @@
       @media #{$md} {
         width: 100%;
       }
+      @media #{$sm} {
+        padding: 30px 15px;
+      }
     }
   }
 }
