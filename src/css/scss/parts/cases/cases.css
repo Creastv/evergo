@@ -104,6 +104,8 @@
     position: initial;
     left: 0;
     top: 0px;
+    -webkit-transform: initial;
+            transform: initial;
   }
 }
 
