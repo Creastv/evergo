@@ -1,7 +1,7 @@
-<?php $languages = icl_get_languages('skip_missing=0&order=dsc&orderby=id');
+<?php $languages = icl_get_languages('skip_missing=1&order=dsc&orderby=id');
                         if(count($languages)){
                             echo '<div class="lang-swicher">';
-                            echo '<ul>';
+                            // echo '<ul>';
                             foreach($languages as $l){
                                 if(!$l['active']) {
                                 echo '<li>';
@@ -21,7 +21,7 @@
                                 }
                                 echo '</li>';
                             }
-                            echo '<ul>';
+                            // echo '<ul>';
                             echo '</div>';
                         }
                     ?>
