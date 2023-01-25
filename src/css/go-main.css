@@ -1723,6 +1723,12 @@ body {
   outline: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .f-form__wraper .form-group-col-2 input {
+    padding: 20px 10px !important;
+  }
+}
+
 .f-form__wraper .form-group-col-2:first-child {
   width: 80%;
   -webkit-box-flex: 1;

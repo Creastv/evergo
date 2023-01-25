@@ -70,6 +70,9 @@
       background: none;
 
       outline: 0;
+      @media #{$sm} {
+        padding: 20px 10px !important;
+      }
     }
     &:first-child {
       width: 80%;
