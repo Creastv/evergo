@@ -31,7 +31,9 @@ $areas    = get_field('areas');
                 </div>
                 <h3><a href="<?php echo $area['link']['url']?>"> <?php echo $area['title'] ;?></a></h3>
                 <p><?php echo $area['description'] ;?></p>
+                <?php if($area['link']['url']) { ?>
                 <a href="<?php echo $area['link']['url']?>" class="btn" target="<?php echo $area['link']['target'] ? $area['link']['target'] : '_self'?>"><?php echo $area['link']['title']; ?></a>
+                <?php } ?>
             </div>
         </div>
         <?php } ?>
