@@ -219,7 +219,7 @@ function register_acf_block_types() {
       ));
         acf_register_block_type(array(
           'name'              => 'ra_bl_opinia',
-          'title'             => __('Custome form'),
+          'title'             => __('Opinion'),
           'render_template'   => 'templates-parts/parts/opinion.php',
           'category'          => 'formatting',
           'icon' => array(
@@ -228,7 +228,7 @@ function register_acf_block_types() {
             'src' => 'ellipsis',
           ),
         'mode'            => 'preview', 
-        'keywords'          => array( 'services' ),
+        'keywords'          => array( 'opinion' ),
         'supports' => array( 'align' =>false ),
         'enqueue_assets'    => function(){
             wp_enqueue_style( 'ra-opinion',  get_template_directory_uri() . '/src/css/scss/parts/opinion/opinion.min.css' );
