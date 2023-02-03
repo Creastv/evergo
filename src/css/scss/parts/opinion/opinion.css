@@ -16,6 +16,12 @@
       flex-wrap: wrap;
 }
 
+.opinion__wraper .opinion__wraper__col {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 @media only screen and (max-width: 768px) {
   .opinion__wraper .opinion__wraper__col {
     width: 100%;

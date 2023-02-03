@@ -12,6 +12,7 @@
   flex-wrap: wrap;
 
   .opinion__wraper__col {
+    align-self: center;
     // width: 50%;
     @media #{$sm} {
       width: 100%;
