@@ -20,10 +20,11 @@ $slider    = get_field('slider');
                         <?php if($link ) { ?>
                         <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
                             <?php } ?>
+                            <?php if($slide['image']) { ?>
                             <div class="slider__content_wraper">
-                                <?php if($slide['image']) { ?>
+                                <?php } ?>
                                 <div class="slider__content">
-                                    <?php } ?>
+
 
                                     <h1 class="h1 h1-slider"><?php echo $slide['title']; ?></h1>
                                     <?php if($slide['subtitle']) { ?>
