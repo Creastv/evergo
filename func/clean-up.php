@@ -56,11 +56,18 @@ add_action('init', 'prefix_remove_unnecessary_tags');
 add_filter( 'use_block_editor_for_post', 'my_disable_gutenberg', 10, 2 );
 
 function my_disable_gutenberg( $can_edit, $post ) {
-  if( $post->post_type == 'post' || $post->post_type == 'case-study' ) {
+  if( get_page_template_slug( $post->ID ) == 'page-landingpage.php' || $post->post_type == 'post' || $post->post_type == 'case-study'  ) {
     return true;
   }
   return false;
 }
+
+// function my_disable_gutenberg( $can_edit, $post ) {
+//   if( !is_page_template( 'page-landingpage.php' ) ) {
+//     return true;
+//   }
+//   return false;
+// }
 
 // remove in wordpress jquery-migrate.min.js?ver=3.3.2:2 JQMIGRATE: Migrate is installed, version 3.3.2
 add_action('wp_default_scripts', function ($scripts) {

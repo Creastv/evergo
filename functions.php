@@ -4,6 +4,7 @@ add_image_size( 'person', 100, 100, array( 'center', 'center' ) );
 add_image_size( 'icon', 45, 45, array( 'center', 'center' ) );
 add_image_size( 'logo', 200, 200 );
 add_image_size( 'post', 700, 390, array( 'center', 'center' ) );
+add_image_size( 'slider', 480, 480, array( 'center', 'center' ) );
 
 if ( ! function_exists( 'go_register_nav_menu' ) ) {
     function go_register_nav_menu(){
@@ -50,7 +51,11 @@ require get_template_directory() . '/func/clean-up.php';
 require get_template_directory() . '/func/cpt.php';
 require get_template_directory() . '/blocks/blocks.php';
 
-
+// gutenberg editor
+function add_block_editor_assets(){
+  wp_enqueue_style('block_editor_css', get_template_directory_uri().'/src/css/go-admin.min.css');
+}
+add_action('enqueue_block_editor_assets','add_block_editor_assets',10,0);
 if ( function_exists( 'acf_add_options_page' ) ) {
 
 	acf_add_options_page( array(

@@ -40,7 +40,7 @@ $header   = get_field('header_testimonial');
                             <p><?php echo $person['opinion']; ?></p>
                         </div>
                     </div>
-                    <div class="button">
+                    <div class="buton">
                         <a href="<?php echo $person['link']['url']; ?>" target="<?php echo $person['link']['target'] ? $person['link']['target'] : '_self'; ?>" class="btn"><?php echo $person['link']['title']; ?></a>
                     </div>
                 </div>

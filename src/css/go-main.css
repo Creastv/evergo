@@ -1942,4 +1942,128 @@ body {
 .wpcf7-not-valid-tip {
   font-size: 14px;
 }
+
+.btn {
+  color: #37444a;
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: 1px solid #c6ced3;
+  text-decoration: none;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.btn:hover {
+  border-color: #e70680;
+  color: #e70680;
+}
+
+.btn-main {
+  display: inline-block;
+}
+
+.btn-revers {
+  color: #e70680;
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: 1px solid #e70680;
+  text-decoration: none;
+}
+
+.btn-revers:hover {
+  color: #fff;
+  background-color: #e70680;
+}
+
+.form-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-group .form-control {
+  width: 100%;
+  min-height: 55px;
+  height: 100%;
+  padding: 10px;
+  background-color: #eaf2f7;
+  border: 0;
+}
+
+.form-group .wpcf7-form-control-wrap {
+  width: 100%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.form-group.text-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.select2-container--default .select2-selection--multiple {
+  width: 100%;
+  min-height: 55px;
+  padding: 10px;
+  border: 0px !important;
+  border-radius: 0px !important;
+  background-color: #eaf2f7 !important;
+}
+
+.wpcf7-acceptance label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.wpcf7-acceptance label input {
+  width: 50px;
+}
+
+.wpcf7-acceptance label .wpcf7-list-item-label {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.wpcf7-submit {
+  margin: 15px;
+  background-color: #fff;
+  border: 1px solid #e70680;
+  color: #e70680;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.wpcf7-submit:hover {
+  background-color: #e70680;
+  color: #fff;
+}
+
+.wpcf7-spinner {
+  position: absolute;
+  top: 30%;
+  right: 0px;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 14px;
+}
+
+.editor-styles-wrapper .wp-block {
+  max-width: 90%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
 /*# sourceMappingURL=go-main.css.map */

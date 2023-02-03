@@ -1,10 +1,10 @@
 var swiper = new Swiper(".slider-home", {
   slidesPerView: 1,
-  loop: true,
-  autoplay: {
-    delay: 6500,
-    disableOnInteraction: false
-  },
+  // loop: true,
+  // autoplay: {
+  //   delay: 6500,
+  //   disableOnInteraction: false
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

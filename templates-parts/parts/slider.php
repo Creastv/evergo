@@ -16,33 +16,40 @@ $slider    = get_field('slider');
                     }
                 ?>
                 <div class="swiper-slide">
-                    <div class="slide <?php echo $slide['image'] ? 'c-white' : '' ?> ">
+                    <div class="slide">
                         <?php if($link ) { ?>
                         <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
                             <?php } ?>
-                            <div class="slider__content">
+                            <div class="slider__content_wraper">
+                                <?php if($slide['image']) { ?>
+                                <div class="slider__content">
+                                    <?php } ?>
 
-                                <h1 class="h1 h1-slider"><?php echo $slide['title']; ?></h1>
-                                <?php if($slide['subtitle']) { ?>
-                                <p><?php echo $slide['subtitle']; ?></p>
-                                <?php } ?>
+                                    <h1 class="h1 h1-slider"><?php echo $slide['title']; ?></h1>
+                                    <?php if($slide['subtitle']) { ?>
+                                    <p><?php echo $slide['subtitle']; ?></p>
+                                    <?php } ?>
+
+                                </div>
+                                <?php if($slide['image']) { ?>
+                                <div class="img">
+                                    <?php if($slide['image'] ) { echo wp_get_attachment_image($slide['image'], 'slider' ); } ?>
+                                </div>
 
                             </div>
+                            <?php } ?>
                             <?php if($slide['link']) { ?>
                         </a>
                         <?php } ?>
-                        <?php if($slide['image']) { ?>
-                        <div class="img" style="background-image: url(<?php echo $slide['image']; ?>)">
-                            <div class="bg"></div>
-                        </div>
-                        <?php } ?>
+
                     </div>
                 </div>
                 <?php } ?>
             </div>
         </div>
-        <div class="pag-con">
-            <div class="swiper-pagination"></div>
-        </div>
+
+    </div>
+    <div class="pag-con">
+        <div class="swiper-pagination"></div>
     </div>
 </section>

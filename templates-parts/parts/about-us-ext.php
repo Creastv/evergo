@@ -12,7 +12,7 @@ if( $link ){
 }
 ?>
 <section id="about-us-ex">
-    <div class="about-us__wraper">
+    <div class="about-us__wraper about-us__wraper--ex">
         <div class="about-us__col">
             <div class="about-us__baner">
                 <?php if($icon) { ?>

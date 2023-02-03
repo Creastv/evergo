@@ -2,7 +2,7 @@
   padding: 50px 0px 0px;
 }
 
-.about-us__wraper {
+.about-us__wraper--ex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,18 +12,18 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .about-us__wraper {
+  .about-us__wraper--ex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.about-us__wraper .about-us__col:nth-child(1) {
+.about-us__wraper--ex .about-us__col:nth-child(1) {
   width: 30%;
 }
 
 @media only screen and (max-width: 768px) {
-  .about-us__wraper .about-us__col:nth-child(1) {
+  .about-us__wraper--ex .about-us__col:nth-child(1) {
     width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -31,12 +31,12 @@
   }
 }
 
-.about-us__wraper .about-us__col:nth-child(2) {
+.about-us__wraper--ex .about-us__col:nth-child(2) {
   width: 60%;
 }
 
 @media only screen and (max-width: 768px) {
-  .about-us__wraper .about-us__col:nth-child(2) {
+  .about-us__wraper--ex .about-us__col:nth-child(2) {
     width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

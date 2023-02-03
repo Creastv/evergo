@@ -45,7 +45,9 @@ if( $link ){
                             <p class="h2"><?php echo $banner['title']; ?></p>
                             <p><i><?php echo $banner['says']; ?></i></p>
                         </div>
+                        <?php if($banner['link']) { ?>
                         <a href="<?php echo $banner['link']['url']; ?>#" class="btn" target="<?php echo $banner['link']['target'] ? $banner['link']['target'] : '_self'; ?>"><?php echo $banner['link']['title']; ?></a>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
