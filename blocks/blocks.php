@@ -216,6 +216,7 @@ function register_acf_block_types() {
         wp_enqueue_script('go-logos', get_template_directory_uri().'/src/js/go-logos.js', array( 'jquery' ),'4', true );
         wp_enqueue_style( 'ra-logos',  get_template_directory_uri() . '/src/css/scss/parts/logos/logos.min.css' );
       },
+      ));
         acf_register_block_type(array(
           'name'              => 'ra_bl_opinia',
           'title'             => __('Custome form'),
@@ -232,6 +233,7 @@ function register_acf_block_types() {
         'enqueue_assets'    => function(){
             wp_enqueue_style( 'ra-opinion',  get_template_directory_uri() . '/src/css/scss/parts/opinion/opinion.min.css' );
         },
+        ));
          acf_register_block_type(array(
           'name'              => 'ra_bl_slider',
           'title'             => __('Slider'),
@@ -252,8 +254,7 @@ function register_acf_block_types() {
           wp_enqueue_style( 'ra-slider',  get_template_directory_uri() . '/src/css/scss/parts/slider/slider.min.css' );
         },
       ));
-      ));
-    ));
+
     }
 if( function_exists('acf_register_block_type') ) {
     add_action('acf/init', 'register_acf_block_types');
