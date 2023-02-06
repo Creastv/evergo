@@ -1,6 +1,6 @@
 <?php
 if(is_home()) {
-$slug = get_page_by_path( 'blog' ); 
+$slug = get_page_by_path( 'insights' ); 
 $header         = get_field('header', $slug->ID);
 $displayHeader  = get_field('display_header', $slug->ID);
 } else {

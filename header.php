@@ -20,7 +20,7 @@
                 <div class="navbar">
                     <?php get_template_part('templates-parts/header/header', 'brand'); ?>
                     <?php get_template_part('templates-parts/header/header', 'nav'); ?>
-                    <?php // get_template_part('templates-parts/header/header', 'lang-swicher'); ?>
+                    <?php // wp-get_template_part('templates-parts/header/header', 'lang-swicher'); ?>
                     <?php get_template_part('templates-parts/header/header', 'contact'); ?>
                     <?php get_template_part('templates-parts/header/header', 'burger'); ?>
                 </div>
