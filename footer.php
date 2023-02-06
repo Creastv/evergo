@@ -32,6 +32,10 @@ $article = get_field('display_articles');
 
 </span>
 <img class="header-bg" src="<?php echo get_template_directory_uri() ?>/src/img/header-bg.png" alt="Evergo - Better business throught IT.">
+
+<?php get_template_part( 'templates-parts/parts/modal' ); ?>
+
+
 <?php wp_footer(); ?>
 </body>
 
