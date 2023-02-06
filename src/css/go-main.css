@@ -96,7 +96,8 @@ p {
   }
 }
 
-ul {
+ul,
+ol {
   font-family: "URW DIN", Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -106,7 +107,8 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
-  ul {
+  ul,
+  ol {
     font-size: 16px;
   }
 }
@@ -2059,11 +2061,5 @@ body {
 
 .wpcf7-not-valid-tip {
   font-size: 14px;
-}
-
-.editor-styles-wrapper .wp-block {
-  max-width: 90%;
-  margin-top: 28px;
-  margin-bottom: 28px;
 }
 /*# sourceMappingURL=go-main.css.map */
