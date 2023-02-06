@@ -84,4 +84,10 @@
       }
     }
   }
+  .f-form__wraper {
+    width: 100% !important;
+    textarea {
+      background: none;
+    }
+  }
 }

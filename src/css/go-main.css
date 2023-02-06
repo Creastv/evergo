@@ -1937,6 +1937,14 @@ body {
   font-size: 12px;
 }
 
+.mod-bg .f-form__wraper {
+  width: 100% !important;
+}
+
+.mod-bg .f-form__wraper textarea {
+  background: none;
+}
+
 .btn {
   color: #37444a;
   padding: 10px 25px;
